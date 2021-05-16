@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="card">
-            <div class="card-header card-header-primary">
+            <div class="card-header card-header-primary mb-3">
                 <h4 class="card-title">{{ trans('global.create') }} {{ trans('cruds.user.title_singular') }}</h4>
             </div>
 
@@ -15,7 +15,7 @@
                     @csrf
                     <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
                         <label for="name">{{ trans('cruds.user.fields.name') }}*</label>
-                        <input type="text" id="name" name="name" class="form-control" value="{{ old('name', isset($user) ? $user->name : '') }}" required>
+                        <input type="text" id="name" name="name" class="form-control" value="{{ old('name', isset($user) ? $user->name : '') }}" >
                         @if($errors->has('name'))
                         <em class="invalid-feedback">
                             {{ $errors->first('name') }}
