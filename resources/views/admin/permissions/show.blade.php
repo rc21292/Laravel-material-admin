@@ -5,7 +5,7 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="card">
-            <div class="card-header card-header-primary">
+            <div class="card-header card-header-primary mb-3">
                 <h4 class="card-title">{{ trans('global.show') }} {{ trans('cruds.permission.title') }}</h4>
             </div>
 
